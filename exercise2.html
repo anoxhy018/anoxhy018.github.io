@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Replicate Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#f2f2f2;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color:#333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; 
+      background-color: #8fd0e8;
+      width: 600px;
+      height: 400px;
+      margin: 40px auto;
+      padding: 30px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; 
+      margin: 0 40px;
+    }
+
+    .box {
+      background-color: white;
+      padding: 10px 25px;
+      border-radius: 6px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Replicate</h2>
+
+  <div class="container">
+    <div class="column">
+      <div class="box">Seven</div>
+      <div class="box">Eight</div>
+      <div class="box">Nine</div>
+      <div class="box">Ten</div>
+      <div class="box">Eleven</div>
+    </div>
+
+    <div class="column">
+      <div class="box">One</div>
+      <div class="box">Two</div>
+      <div class="box">Three</div>
+      <div class="box">Four</div>
+      <div class="box">Five</div>
+      <div class="box">Six</div>
+    </div>
+  </div>
+
+</body>
+</html>

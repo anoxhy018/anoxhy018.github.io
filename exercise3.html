@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example3</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      width: 1000px;
+      grid-template-rows: 80px 80px 80px; 
+      grid-template-columns: 150px 1fr 150px;
+      border: 6px solid #8ec8f4;
+      box-sizing: border-box;
+    }
+
+    header {
+      grid-column: 1 / 4;
+      border-bottom: 6px solid #8ec8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    nav {
+      grid-row: 2 / 4; 
+      border-right: 6px solid #8ec8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    main {
+      border-right: 6px solid #8ec8f4;
+      border-bottom: 6px solid #8ec8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    aside {
+      border-bottom: 6px solid #8ec8f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    footer {
+      grid-column: 2 / 4; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>Header</header>
+    <nav>Menu</nav>
+    <main>Main</main>
+    <aside>Right</aside>
+    <footer>Footer</footer>
+  </div>
+
+</body>
+</html>
